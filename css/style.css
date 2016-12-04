@@ -77,3 +77,31 @@ body {
 	top: 5px;
 	border: 0;
 }
+
+/*nav icon部分*/
+.enter-nav {
+	display: block;
+	width: 100%;
+}
+.enter-nav a {
+	display: block;
+	width: 25%;
+	float: left;
+	padding: 10px 0px;
+	text-align: center;
+}
+.enter-nav a img {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto 7px auto;
+}
+.enter-nav:after {
+	clear: both;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	font-size: 0;
+	display: block;
+}
+    
