@@ -96,6 +96,10 @@ body {
 	height: 40px;
 	margin: 0 auto 7px auto;
 }
+.enter-nav a span {
+	color: #555;
+	font-size: 14px;
+}
 .enter-nav:after {
 	clear: both;
 	content: ".";

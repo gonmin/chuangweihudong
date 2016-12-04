@@ -2,10 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
+ul,ol,menu{list-style:none}
 em, i {
     text-decoration: none;
     font-style: normal;
 }
+a,ins,s,u,del{text-decoration:none}
 img, img a {
     border: 0;
     vertical-align: middle;
@@ -14,3 +16,5 @@ button, input, select, textarea {
 	outline: 0;
 	vertical-align: middle;
 }
+article,aside,footer,header,section,nav,figure,figcaption,hgroup,details,menu
+{display:block}
