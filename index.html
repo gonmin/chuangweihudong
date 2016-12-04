@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>chuang</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="">
+		<div class="header-top">
+			<div class="heaer-top-content">
+				<i></i>创维互动
+			</div>
+			
+		</div>
+		<div class="header-focus" id="header_focus" style="">
+			<img src="images/focus.jpg" alt="">
+		</div>
+	</header>
+	<div class="main">
+		<div class="search">
+			<form action="" method="">
+				<div class="search-box">
+					<input type="text" placeholder="请输入关键字...">
+					<input type="submit" name="">
+
+				</div>
+			</form>
+		</div>
+		<nav class="enter-nav">
+			
+		</nav>
+	</div>
+	<script type="text/javascript">
+		window.onload = function(){
+			setFocusH();
+			function setFocusH (){
+				var header_focus = document.getElementById('header_focus');
+				var s_width = document.documentElement.clientWidth;
+				if (s_width>640) {
+					s_width = 640;
+				} else if(s_width<320) {
+					s_width = 320;
+				}
+				header_focus.style.height = s_width/2.04 + "px";
+			}
+			window.onresize = function(){
+				setFocusH();
+			}			
+		}
+
+	</script>
+</body>
+</html>
