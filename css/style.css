@@ -3,6 +3,7 @@ body {
 	min-width: 320px;
 
 	margin: 0 auto;
+	height: 100%;
 
 }
 .header-top {
@@ -42,7 +43,8 @@ body {
 	height: 100%;
 }
 .main {
-	margin-top: 32px;
+	padding-top: 32px;
+	/*background-color: #f8f2e4;*/
 }
 .main .search {
 	padding: 0 20px 0 25px;
@@ -62,6 +64,7 @@ body {
 .main .search .search-box [type="text"] {
 	border: none;
 	padding-left: 8px;
+	/*background-color: #f8f2e4;*/
 	width: 80%;
 }
 .main .search .search-box [type="submit"] {
@@ -108,4 +111,39 @@ body {
 	font-size: 0;
 	display: block;
 }
-    
+.buying {
+	margin-top: 8px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #575757;
+	font-weight: bold;
+	padding-left: 10px;
+}    
+.footer-nav {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 44px;
+	width: 100%;
+	background: url(../images/images/footer-bg.png);
+	background-size: 100% 44px;
+}
+.footer-nav a {
+	float: left;
+	width: 20%;
+	display: block;
+	height: 44px;
+	text-align: center;
+	z-index: 9;
+}
+.footer-nav a img {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 5px auto 0;
+}
+.footer-nav a span {
+	font-size: 13px;
+	color: #555;
+}
