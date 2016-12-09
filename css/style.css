@@ -95,13 +95,13 @@ body {
 }
 .enter-nav a img {
 	display: block;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	margin: 0 auto 7px auto;
 }
 .enter-nav a span {
 	color: #555;
-	font-size: 14px;
+	font-size: 13px;
 }
 .enter-nav:after {
 	clear: both;
