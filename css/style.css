@@ -124,7 +124,7 @@ body {
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	height: 44px;
+	height: 50px;
 	width: 100%;
 	background: url(../images/images/footer-bg.png);
 	background-size: 100% 44px;
@@ -133,7 +133,7 @@ body {
 	float: left;
 	width: 20%;
 	display: block;
-	height: 44px;
+	height: 50px;
 	text-align: center;
 	z-index: 9;
 }
@@ -141,7 +141,7 @@ body {
 	display: block;
 	width: 20px;
 	height: 20px;
-	margin: 5px auto 0;
+	margin: 5px auto 3px;
 }
 .footer-nav a span {
 	font-size: 13px;
