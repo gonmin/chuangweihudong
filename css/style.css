@@ -120,6 +120,7 @@ body {
 	font-weight: bold;
 	padding-left: 10px;
 }    
+/*底部nav*/
 .footer-nav {
 	position: fixed;
 	left: 0;
@@ -142,6 +143,9 @@ body {
 	width: 20px;
 	height: 20px;
 	margin: 5px auto 3px;
+}
+.footer-nav .weixin img {
+	width: 25px;
 }
 .footer-nav a span {
 	font-size: 13px;

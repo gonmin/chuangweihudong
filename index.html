@@ -23,7 +23,7 @@
 		<div class="search">
 			<form action="" method="">
 				<div class="search-box">
-					<input type="text" placeholder="请输入关键字...">
+					<input type="text" placeholder="请输入关键字..." id="search">
 					<input type="submit" name="">
 
 				</div>
@@ -72,7 +72,7 @@
 			<img src="images/images/footer_home.png" alt="">
 			<span>首页</span>
 		</a>
-		<a href="">
+		<a href="" class="weixin">
 			<img src="images/images/weixin.png" alt="">
 			<span>微信客服</span>
 		</a>
@@ -89,9 +89,15 @@
 			<span>登录</span>
 		</a>
 	</div>
+	<div class="search-page">
+	</div>
 	<script type="text/javascript">
 		window.onload = function(){
 			setFocusH();
+			var search = document.getElementById('search');
+			search.onfocus = function(){
+				window.location.href = "search.html";
+			}	
 			function setFocusH (){
 				var header_focus = document.getElementById('header_focus');
 				var s_width = document.documentElement.clientWidth;
