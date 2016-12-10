@@ -95,7 +95,7 @@
 			</div>
 			<form action="" method="" class="search-form">
 				<div class="search-box-p">
-					<input type="text" name="" placeholder="请输入关键字..." required="required" autofocus="autofocus">
+					<input type="text" name="" placeholder="请输入关键字..." required="required" autofocus="autofocus" id="search_text">
 					<input type="submit">
 				</div>
 			</form>
@@ -108,8 +108,10 @@
 			var search = document.getElementById('search');
 			var search_page = document.getElementById('search_page');
 			var close_s = document.getElementById('close_s');
+			var search_text = document.getElementById('search_text');
 			search.onfocus = function(){
 				search_page.style.display = "block";
+				search_text.focus();
 			}	
 			close_s.onclick = function(){
 				search_page.style.display = "none";
