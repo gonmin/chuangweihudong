@@ -180,14 +180,17 @@ body {
 	z-index: 100;
 }
 .search-page-box {
-	margin: 0 10px 0 33px;
+	margin: 0 10px 0 51px;
 	height: 40px;
 }
 .search-page .close-s {
 	position: absolute;
 	left: 10px;
-	top: 17px;
+	top: 10px;
+	text-align: center;
+	line-height: 30px;
 	height: 30px;
+	width: 40px;
 }
 .search-page .search-form {
 	margin-top: 10px;
