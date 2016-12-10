@@ -190,7 +190,10 @@ body {
 	text-align: center;
 	line-height: 30px;
 	height: 30px;
-	width: 40px;
+	width: 30px;
+	font-weight: bold;
+	font-size: 19px;
+	color: rgb(131,131,131);
 }
 .search-page .search-form {
 	margin-top: 10px;
