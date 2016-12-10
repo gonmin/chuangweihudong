@@ -23,7 +23,7 @@
 		<div class="search">
 			<form action="" method="">
 				<div class="search-box">
-					<input type="text" placeholder="请输入关键字..." id="search" required="required">
+					<input type="text" placeholder="请输入关键字..." id="search">
 					<input type="submit" name="">
 
 				</div>
@@ -91,11 +91,11 @@
 	</div>
 	<div class="search-page" style="display: none;" id="search_page">
 		<div class="search-page-box">
-			<div class="close-s iconfont">&#xe65d;
+			<div class="close-s iconfont" id="close_s">&#xe65d;
 			</div>
 			<form action="" method="" class="search-form">
 				<div class="search-box-p">
-					<input type="text" name="" placeholder="请输入关键字..." required="required">
+					<input type="text" name="" placeholder="请输入关键字..." required="required" autofocus="autofocus">
 					<input type="submit">
 				</div>
 			</form>
@@ -107,9 +107,13 @@
 			setFocusH();
 			var search = document.getElementById('search');
 			var search_page = document.getElementById('search_page');
+			var close_s = document.getElementById('close_s');
 			search.onfocus = function(){
 				search_page.style.display = "block";
 			}	
+			close_s.onclick = function(){
+				search_page.style.display = "none";
+			}
 			function setFocusH (){
 				var header_focus = document.getElementById('header_focus');
 				var s_width = document.documentElement.clientWidth;
