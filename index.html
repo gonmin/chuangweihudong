@@ -23,7 +23,7 @@
 		<div class="search">
 			<form action="" method="">
 				<div class="search-box">
-					<input type="text" placeholder="请输入关键字..." id="search">
+					<input type="text" placeholder="请输入关键字..." id="search" required="required">
 					<input type="submit" name="">
 
 				</div>
@@ -89,14 +89,26 @@
 			<span>登录</span>
 		</a>
 	</div>
-	<div class="search-page">
+	<div class="search-page" style="display: none;" id="search_page">
+		<div class="search-page-box">
+			<div class="close-s iconfont">&#xe65d;
+			</div>
+			<form action="" method="" class="search-form">
+				<div class="search-box-p">
+					<input type="text" name="" placeholder="请输入关键字..." required="required">
+					<input type="submit">
+				</div>
+			</form>
+		</div>
+		<div class="search-empty">
 	</div>
 	<script type="text/javascript">
 		window.onload = function(){
 			setFocusH();
 			var search = document.getElementById('search');
+			var search_page = document.getElementById('search_page');
 			search.onfocus = function(){
-				window.location.href = "search.html";
+				search_page.style.display = "block";
 			}	
 			function setFocusH (){
 				var header_focus = document.getElementById('header_focus');
